@@ -1,0 +1,13 @@
+A.1 .git/hooks
+
+A.2 Toute langue, compilée ou interprétée peut être utilisée 
+(à condition que l'interprète approprié soit disponible sur le système).
+
+La seule exigence pour les hooks qui s'exécutent avant les événements 
+et qui sont autorisés à bloquer le traitement des événements est de renvoyer le code 
+de sortie en cas de succès ou un code de sortie différent de zéro pour abandonner l'opération.
+
+A.3 Pré-commit hook 
+
+
+B.1 

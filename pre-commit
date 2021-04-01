@@ -1,0 +1,13 @@
+#!/bin/bash
+ 
+while read st file; do
+    # passer les fichier supprimé
+    if [ "$st" == 'D' ]; then continue; fi
+ 
+    # validé que les fichier .py 
+    if [[ "$file" =~ ".py$" ]] && ! pylint -c "$fi"; then
+        echo "Python syntax verifie failed for file: $fi"
+        exit 1
+    fi
+done < <(git diff --cached --name-status)
+ 
