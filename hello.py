@@ -1,4 +1,5 @@
 ## question B.1 .i ###
+"""This function does blah blah."""
 from flask import Flask
 app = Flask(__name__)
 @app.route('/')
