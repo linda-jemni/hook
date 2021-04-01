@@ -1,1 +1,1 @@
-echo "linda"
+print "linda"
