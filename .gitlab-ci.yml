@@ -1,0 +1,14 @@
+default:
+  image: python:3.8
+  before_script:
+    - pip install -r requirements.txt
+build-job:
+  stage: build
+  script:
+    - echo "This Job build ... ""
+    - echo "Hello, $GITLAB_USER_LOGIN!"
+test-job:
+  stage: test
+  script:
+    - echo "This job tests ...."
+    - pylint hello.py
